@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(173, 216, 230, 0.678);
+    text-align: center;
+}
+img {
+    width: 500px;
+    height: auto;
+}
+li {
+    text-align: left;
+}
+li.recipe {
+    text-align: center;
+}
