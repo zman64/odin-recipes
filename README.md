@@ -1,3 +1,3 @@
 # odin-recipes
-HTML BareBones with some boot-licking recipes
+HTML BareBones with some finger-licking recipes
 
