@@ -10,12 +10,54 @@
 </head>
 
 <body>
-    <h1>Odin Recipes-Yum!</h1>
-    <ul>
-        <li class="recipe"><a href="recipes/turkey.html">Turkey Recipe</a></li>
-        <li class="recipe"><a href="recipes/mac-n-cheese.html">Creamy Baked Mac and Cheese</a></li>
-        <li class="recipe"><a href="recipes/pumpkin-pecan-pie.html">Pumpkin Pecan Pie</a></li>
-    </ul>
-</body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./submit.html">Submit Your Recipe</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-</html>
+    <main class="container">
+        <h1>Odin Recipes-Yum!</h1>
+        <input type="text" id="search" name="search" placeholder="Search for recipes...">
+        <ul>
+            <li class="recipe">
+                <img src="images/turkey.jpeg" alt="Turkey">
+                <a href="recipes/turkey.html">Turkey Recipe</a>
+            </li>
+            <li class="recipe">
+                <img src="images/mac-n-cheese.jpg" alt="Mac and Cheese">
+                <a href="recipes/mac-n-cheese.html">Creamy Baked Mac and Cheese</a>
+            </li>
+            <li class="recipe">
+                <img src="images/pie.jpg" alt="Pumpkin Pecan Pie">
+                <a href="recipes/pumpkin-pecan-pie.html">Pumpkin Pecan Pie</a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Odin Recipes</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </footer>
+
+    <script>
+        let searchInput = document.getElementById('search');
+        searchInput.addEventListener('keyup', function (event) {
+            let query = event.target.value.toLowerCase();
+            let recipes = document.querySelectorAll('.recipe');
+
+            recipes.forEach(function (recipe) {
+                let recipeTitle = recipe.textContent.toLowerCase();
+                if (recipeTitle.indexOf(query) !== -1) {
+                    recipe.style.display = 'flex';
+                } else {
+                    recipe.style.display = 'none';
+                }
+            });
+        });
+
+    </script>
+</body>
