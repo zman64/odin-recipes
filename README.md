@@ -2,7 +2,7 @@
 
 Welcome to Odin Recipes Website. This website is a demonstration of understanding HTML, CSS, and a bit of JavaScript in creating a responsive and interactive website. It features a main landing page with links to individual recipe pages and a pleasant color scheme for easy reading.
 <p align="center">
-<img src="./images/main-page.png" alt="Screenshot of the website" width="600"/>
+<img src="./images/main-page-2.png" alt="Screenshot of the website" width="600"/>
 </p>
 
 ## :books: Project Overview
