@@ -24,14 +24,16 @@
             <img src="../images/turkey.jpeg" alt="A Delicious Cooked Turkey">
             <div class="description-card">
                 <h2>Description</h2>
-                <p>A perfectly seasoned and juicy turkey. My friend from France taught me to cook turkey like this, but she
-                    never measures anything so use your own judgment for vegetable amounts, etc. I usually err on the side
+                <p>A perfectly seasoned and juicy turkey. My friend from France taught me to cook turkey like this, but
+                    she
+                    never measures anything so use your own judgment for vegetable amounts, etc. I usually err on the
+                    side
                     of
                     'more is better'!</p>
             </div>
         </section>
         <section class="recipe-details">
-            <div>
+            <div class="d-flex">
                 <h2>Ingredients</h2>
                 <ul class="ingredients">
                     <li>1 (18 pound) whole turkey, neck and giblets removed</li>
@@ -46,33 +48,44 @@
                 </ul>
             </div>
 
-            <div class="steps">
-                <h2>Steps</h2>
-                <ol>
-                    <li>Rub the turkey inside and out with the kosher salt. Place the bird in a large stock pot, and cover
-                        with
-                        cold water. Place in the refrigerator, and allow the turkey to soak in the salt and water mixture 12
-                        hours, or overnight.</li>
-                    <li>Preheat oven to 350 degrees F (175 degrees C). Thoroughly rinse the turkey, and discard the brine
-                        mixture.</li>
-                    <li>Brush the turkey with 1/2 the melted butter. Place breast side down on a roasting rack in a shallow
-                        roasting pan. Stuff the turkey cavity with 1 onion, 1/2 the carrots, 1/2 the celery, 1 sprig of
-                        thyme,
-                        and the bay leaf. Scatter the remaining vegetables and thyme around the bottom of the roasting pan,
-                        and
-                        cover with the white wine.</li>
-                    <li>Roast uncovered 3 1/2 to 4 hours in the preheated oven, until the internal temperature of the thigh
-                        reaches 180 degrees F (85 degrees C). Carefully turn the turkey breast side up about 2/3 through the
-                        roasting time, and brush with the remaining butter. Allow the bird to stand about 30 minutes before
-                        carving.</li>
-                </ol>
+            <div>
+                <div class="d-flex">
+                    <h2>Steps</h2>
+                    <ol class="steps">
+                        <li>Rub the turkey inside and out with the kosher salt. Place the bird in a large stock pot, and
+                            cover
+                            with
+                            cold water. Place in the refrigerator, and allow the turkey to soak in the salt and water
+                            mixture 12
+                            hours, or overnight.</li>
+                        <li>Preheat oven to 350 degrees F (175 degrees C). Thoroughly rinse the turkey, and discard the
+                            brine
+                            mixture.</li>
+                        <li>Brush the turkey with 1/2 the melted butter. Place breast side down on a roasting rack in a
+                            shallow
+                            roasting pan. Stuff the turkey cavity with 1 onion, 1/2 the carrots, 1/2 the celery, 1 sprig
+                            of
+                            thyme,
+                            and the bay leaf. Scatter the remaining vegetables and thyme around the bottom of the
+                            roasting pan,
+                            and
+                            cover with the white wine.</li>
+                        <li>Roast uncovered 3 1/2 to 4 hours in the preheated oven, until the internal temperature of
+                            the thigh
+                            reaches 180 degrees F (85 degrees C). Carefully turn the turkey breast side up about 2/3
+                            through the
+                            roasting time, and brush with the remaining butter. Allow the bird to stand about 30 minutes
+                            before
+                            carving.</li>
+                    </ol>
+                </div>
             </div>
         </section>
         <a href="../index.html">Back to the Recipes.</a>
 
     </main>
     <footer>
-        <p>&copy; 2023 Odin Recipes</p>
+        <p style="display: inline">&copy; 2023 Odin Recipes</p>
         <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
     </footer>
 </body>
@@ -82,8 +95,8 @@
     const listItems = document.querySelectorAll('.ingredients li, .steps li');
 
     // Add a click event listener to each list item
-    listItems.forEach(function(listItem) {
-        listItem.addEventListener('click', function() {
+    listItems.forEach(function (listItem) {
+        listItem.addEventListener('click', function () {
             // Toggle the strikethrough class whenever a list item is clicked
             this.classList.toggle('strikethrough');
         });

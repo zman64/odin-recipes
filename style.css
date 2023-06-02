@@ -53,16 +53,23 @@ body {
 
 /* --- Layout --- */
 
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 1em;
+    /* padding: 0 1em; */
     box-shadow: 2px 2px 15px var(--shadow-color);
     padding-bottom: 100px;
 }
 
 h1, h2 {
     color: #495057;
+    text-align: center;
 }
 
 p {
@@ -135,16 +142,17 @@ ul {
 footer {
     background-color: var(--nav-bg-color);
     color: var(--nav-link-color);
-    padding: 1em 0;
+    padding: 0. style="display: inline;"75em 0;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 2em;
+    /* margin-top: 1em; */
 }
 
 footer p {
     margin: 0;
+    margin-right: 100px;
 }
 
 footer a {
@@ -193,7 +201,7 @@ footer a:hover {
 
 .recipe-details{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 80%;
     gap: 20px;
@@ -208,27 +216,31 @@ footer a:hover {
     overflow-y: auto;
     max-height: 300px;
     padding-right: 1em;
+    padding-left: 1em;
 }
 
-.steps ol {
+.steps {
     counter-reset: step-counter;  /* initialize a counter named step-counter */
     list-style-type: none;  /* remove default numbering */
-    padding-left: 0;  /* remove default padding */
+    padding-left: 1em;  /* remove default padding */
+    border-radius: 5px;
+    padding-top: 10px;
 }
 
-.steps ol li {
+.steps li {
     counter-increment: step-counter;  /* increment the counter for each list item */
     margin-bottom: 20px;  /* space between steps */
     padding-left: 1.5em;  /* space for the counter before the text starts */
     position: relative;  /* allows us to position the counter relative to the list item */
 }
 
-.steps ol li::before {
+.steps li::before {
     content: counter(step-counter);  /* display the counter */
     position: absolute;  /* position the counter absolutely within the relative positioning of the list item */
     left: 0;
     font-weight: bold;  /* make the counter bold */
     color: var(--main-accent-color);  /* change the color of the counter */
+    
 }
 /* ... */
 
@@ -250,17 +262,19 @@ footer a:hover {
 /* ... Ingredients */
 .ingredients {
     list-style-type: disc; /* change this to none if you do not want bullets */
-    padding: 20px; /* adds some left padding to the entire list */
+    padding-left: 20px;
+    padding-top: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     
 }
 
 .ingredients li {
-    margin-bottom: 10px; /* adds some space between list items */
-    padding: 10px 0;
+    margin-bottom: 5px; /* adds some space between list items */
+    /* padding: 10px 0; */
+    margin-left: 15px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
