@@ -17,6 +17,9 @@ The features of this project include:
 5. Interactivity added with JavaScript such as ability to cross off ingredients and steps.
 6. Use of CSS variables for maintainable and scalable stylesheets.
 
+SPECIAL NOTE:
+Only the Home button works in the nav bar and also the footer buttons are for show and not usable. Future versions could have a working navbar and more pages.
+
 ## :dart: Code Highlights
 - **Navigation bar:** The navbar has been styled using CSS Flexbox for horizontal alignment of links. It's also made responsive to adapt to various screen sizes.
 - **Image Styling:** Images in the recipe pages have been styled to appear circular using `border-radius: 50%` for a more aesthetic look.
