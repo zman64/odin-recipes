@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,17 +31,34 @@
         <input type="text" id="search" name="search" placeholder="Search for recipes...">
         <ul>
             <li class="recipe">
-                <img src="images/turkey.jpeg" alt="Turkey">
-                <a href="recipes/turkey.html">Turkey Recipe</a>
+                <div class="content">
+                    <a href="recipes/turkey.html">
+                        <img src="images/turkey.jpeg" alt="Turkey">
+                    </a>
+
+                    <a href="recipes/turkey.html">Turkey</a>
+                </div>
             </li>
+
             <li class="recipe">
-                <img src="images/mac-n-cheese.jpg" alt="Mac and Cheese">
-                <a href="recipes/mac-n-cheese.html">Creamy Baked Mac and Cheese</a>
+                <div class="content">
+                    <a href="recipes/mac-n-cheese.html">
+                        <img src="images/mac-n-cheese.jpg" alt="mac-n-cheese">
+                    </a>
+                    <a href="recipes/mac-n-cheese.html">Mac-N-Cheese</a>
+                </div>
             </li>
+
             <li class="recipe">
-                <img src="images/pie.jpg" alt="Pumpkin Pecan Pie">
-                <a href="recipes/pumpkin-pecan-pie.html">Pumpkin Pecan Pie</a>
+                <div class="content">
+                    <a href="recipes/pumpkin-pecan-pie.html">
+                        <img src="images/pie.jpg" alt="pumpkin-pecan-pie">
+                    </a>
+
+                    <a href="recipes/pumpkin-pecan-pie.html">Pumpkin Pecan Pie</a>
+                </div>
             </li>
+
         </ul>
     </main>
 
